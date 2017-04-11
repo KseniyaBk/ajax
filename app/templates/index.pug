@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  .main
+    .sidebar
+      #user
+        a.user__name(href="#") Weather Single Page Application
+        nav.menu
+          form(class='menu__item' action="")
+            p Watch weather for your city
+            input(type="text" placeholder="Your city name")
+            input(id="search" type="submit" value="Search")
+    .content
+      h1 Weather Online Avaliable Now!
+      .preview__wrap
+     
+        

@@ -1,0 +1,101 @@
+*
+    box-sizing: border-box
+body
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    font-size: 16px
+    color: #333
+$contrast: #B62F33
+$font: 'Alegreya', serif
+.main
+    height: 100%
+    min-height: 100vh
+    display: flex
+    align-items: stretch
+.content 
+    width: 75%
+    padding: 0 20px
+.sidebar
+    width: 25%
+    padding: 30px 0
+    background: $contrast
+    color: #fff
+.user__name
+    padding: 20px 20px
+    font-size: 24px
+    display: inline-block
+    color: inherit
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+.menu
+    &__item
+        padding: 20px
+        border-bottom: 1px solid lighten($contrast, 10%)
+        display: block
+        color: #fff
+        text-decoration: none
+        &:hover
+            background: lighten($contrast, 5%)
+
+input
+    border: 1px solid lighten($contrast, 10%)   
+    background: lighten($contrast, 35%) 
+    padding: 7px 10px 
+    border-radius: 5px 
+input[type=submit]
+    padding: 7px 25px         
+
+.preview
+    font-family: $font
+    position: relative
+    width: 40%
+    border: 2px solid $contrast
+    padding: 20px
+    font-size: 36px
+    font-weight: 700
+    text-align: right
+    background: #a9e4f7
+    background: -moz-radial-gradient(center, ellipse cover, #a9e4f7 0%, #0fb4e7 100%)
+    background: -webkit-radial-gradient(center, ellipse cover, #a9e4f7 0%,#0fb4e7 100%)
+    background: radial-gradient(ellipse at center, #a9e4f7 0%,#0fb4e7 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9e4f7', endColorstr='#0fb4e7',GradientType=1 )
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+    .temp_val
+        width: 50%
+        float: left 
+        color: #9C27B0
+        font-size: 16px
+    .temp
+        width: 50%
+        float: left 
+        font-size: 30px
+    .date 
+        width: 40% 
+        text-align: left
+        position: absolute
+        top: -3%
+        left: 7%
+        p
+            color: #fff
+            font-size: 18px 
+            margin: 0
+        .time
+            color: #fff
+            font-size: 27px
+            margin-top: 20px
+    .main_temp
+        color: #fff    
+
+.btn
+    display: inline-block
+    padding: 10px 20px
+    text-transform: uppercase
+    color: #fff
+    border: 1px solid #666
+    background: #666
+    text-decoration: none
+        
+
+
